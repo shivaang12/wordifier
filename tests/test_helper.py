@@ -17,3 +17,22 @@ def test_number_to_alpha_dict():
 def test_find_vanity_number_format():
     assert helper.find_vanity_number_format("1-800-123-4567") == ("1-800-", "1234567")
     assert helper.find_vanity_number_format("800-123-4567") == ("800-", "1234567")
+
+
+def test_find_words():
+    assert "PAINTER" in helper.find_words("7246837")
+
+
+def test_count_alpha():
+    assert helper.count_alpha("123abc") == 3
+    assert helper.count_alpha("123") == 0
+
+
+def test_get_alpha_numeric_format():
+    assert helper.get_alpha_numeric_format("72HOT37") == "72-HOT-37"
+
+
+def test_index_division_array():
+    assert [[0, 7]] in helper.index_division_array.get_all_possible_indexes()
+    assert [[0, 1], [1, 7]] in helper.index_division_array.get_all_possible_indexes()
+    assert [[0, 5], [5, 6], [6, 7]] in helper.index_division_array.get_all_possible_indexes()
