@@ -1,4 +1,5 @@
-# Wordifier
+# Wordifier 
+![wordify-test](https://github.com/shivaang12/wordifier/workflows/wordify-test/badge.svg)
 
 
 A Python based vanity number generator. You can utilize the pacakge to generate possible vanity number upon providing a valid US phone number (Please see below for phone number compatibility).
