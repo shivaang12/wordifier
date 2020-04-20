@@ -66,7 +66,8 @@ def find_words(number: str):
 def count_alpha(number: str):
     count = 0
     for char in number:
-        count += 1 if char.isalpha() else None
+        if char.isalpha():
+            count += 1
     return count
 
 
