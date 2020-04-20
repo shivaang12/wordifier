@@ -30,10 +30,10 @@ def words_to_number(number: str) -> str:
 
     prefix_number, wordify_number = formated_number
 
-    for char_ind in range(len(wordify_number)):
-        if wordify_number[char_ind].isalpha():
+    for char_ind, char in enumerate(wordify_number):
+        if char.isalpha():
             for item in helper.number_to_alpha_dict.items():
-                if wordify_number[char_ind] in item[1]:
+                if char in item[1]:
                     wordify_number = wordify_number[:char_ind] + item[0] + \
                         wordify_number[char_ind+1:]
 
