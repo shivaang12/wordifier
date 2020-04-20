@@ -16,3 +16,10 @@ def test_words_to_number():
 def test_number_to_words():
     assert wordifier.number_to_words("1-800-724-6837") == "1-800-PAINTER"
     assert wordifier.number_to_words("+1-800-724-6837") == "1-800-PAINTER"
+
+
+def test_all_wordifications():
+    assert "1-800-PAINTER" in wordifier.all_wordifications("1-800-724-6837")
+    assert "1-800-72-HOT-37" in wordifier.all_wordifications("1-800-724-6837")
+    assert "1-800-FLOWERS" in wordifier.all_wordifications("1-800-356-9377")
+    assert wordifier.all_wordifications("000-000-0000") == []
