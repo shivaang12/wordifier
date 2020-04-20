@@ -9,6 +9,13 @@ Additionally, it can also take a vanity number and generate a valid all digit ph
 * Free software: MIT license
 
 
+Dependencies
+------------
+
+* Python3 (tested on 3.5.x, 3.6.x, 3.7.x, 3.8.x)
+* Pyenchant >= 3.0.1
+
+
 Features
 --------
 
